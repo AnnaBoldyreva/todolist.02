@@ -25,14 +25,25 @@ class  App extends React.Component {
         });
     };
 
+    changeFilter = (newFilterValue) => {
+        this.setState({filterValue:newFilterValue})
+    };
+
 
 
   render =()=> {
     return (
         <div>
           <Header addBook={this.addBook}/>
-          <Tasks books={this.state.books} />
-          <Footer filterValue={this.state.filterValue}/>
+          <Tasks books={this.state.books.filter((book)=> {
+              switch (this.state.filterValue){
+                  case 'All': return true;
+                  case 'Completed': return book.isDone;
+                  case 'Active': return !book.isDone;
+                  default: return true;
+              }
+          })} />
+          <Footer filterValue={this.state.filterValue} changeFilter={this.changeFilter}/>
 
         </div>
     );
