@@ -6,6 +6,7 @@ class  Footer extends React.Component {
     return (
         <div>
 
+
         </div>
     );
   }
