@@ -29,13 +29,27 @@ class  App extends React.Component {
         this.setState({filterValue:newFilterValue})
     };
 
+    changeStatus = (isDone, book) => {
+        let newBooks = this.state.books.map( b =>{
+            if(b !== book) {
+                return b;
+            } else {
+                return {...b, isDone: isDone}
+            }
+        });
+        this.setState({
+            books: newBooks
+        });
+    };
+
 
 
   render =()=> {
     return (
         <div>
           <Header addBook={this.addBook}/>
-          <Tasks books={this.state.books.filter((book)=> {
+          <Tasks changeStatus={this.changeStatus}
+              books={this.state.books.filter((book)=> {
               switch (this.state.filterValue){
                   case 'All': return true;
                   case 'Completed': return book.isDone;

@@ -3,9 +3,10 @@ import Books from "./Books";
 
 
 class  Tasks extends React.Component {
-  render =()=> {
+  render =() => {
       let booksElements = this.props.books.map((book) => {
-          return <Books title={book.title} isDone={book.isDone} author={book.author} published={book.published}/>
+          return <Books book={book}
+          changeStatus={this.props.changeStatus}/>
       });
     return (
         <div>
