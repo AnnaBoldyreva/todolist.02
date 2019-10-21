@@ -7,7 +7,7 @@ class  Books extends React.Component {
         <div>
             <div>
                 <input type='checkbox' checked={this.props.isDone}/>
-                <span>title:'{this.props.title}', author: {this.props.author}, published: {this.props.published}
+                <span>title: '{this.props.title}',  author: {this.props.author},  published: {this.props.published}
                  </span>
             </div>
 
