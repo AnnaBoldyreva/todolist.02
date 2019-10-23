@@ -5,7 +5,7 @@ import Books from "./Books";
 class  Tasks extends React.Component {
   render =() => {
       let booksElements = this.props.books.map((book) => {
-          return <Books book={book}
+          return <Books books={book}
           changeStatus={this.props.changeStatus}/>
       });
     return (

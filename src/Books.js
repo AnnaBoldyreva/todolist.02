@@ -4,7 +4,7 @@ import React from 'react';
 class  Books extends React.Component {
 
     onIsDoneChange = (e) => {
-        this.props.changeStatus(this.props.book, e.currentTarget.checked)
+     this.props.changeStatus( e.currentTarget.checked, this.props.books);
     };
 
   render =()=> {
@@ -12,8 +12,10 @@ class  Books extends React.Component {
     return (
         <div>
             <div>
-                <input type='checkbox' checked={this.props.book.isDone} onChange={this.onIsDoneChange}/>
-                <span>title: '{this.props.book.title}',  author: {this.props.book.author},  published: {this.props.book.published}
+                <input type='checkbox'
+                       checked={this.props.books.isDone}
+                       onChange={this.onIsDoneChange}/>
+                <span>title: '{this.props.books.title}',  author: {this.props.books.author},  published: {this.props.books.published}
                  </span>
             </div>
 

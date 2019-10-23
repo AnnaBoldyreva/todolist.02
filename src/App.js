@@ -29,13 +29,12 @@ class  App extends React.Component {
         this.setState({filterValue:newFilterValue})
     };
 
-    changeStatus = (isDone, book) => {
-        let newBooks = this.state.books.map( b =>{
-            if(b !== book) {
-                return b;
-            } else {
-                return {...b, isDone: isDone}
+    changeStatus = (status, book) => {
+        let newBooks = this.state.books.map( b => {
+            if (b === book) {
+                return {...b, isDone: status};
             }
+            return b;
         });
         this.setState({
             books: newBooks
