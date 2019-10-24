@@ -11,6 +11,8 @@ class  Footer extends React.Component {
             <button onClick={()=> {this.props.changeFilter('All')}} className={classForAll }>All</button>
             <button onClick={()=> {this.props.changeFilter('Completed')}} className={classForCompleted}>Completed</button>
             <button onClick={()=> {this.props.changeFilter('Active')}} className={classForActive}>Active</button>
+            <span>hide</span>
+            <span>show</span>
         </div>
     );
   }
