@@ -14,6 +14,10 @@ class  Header extends React.Component {
         this.props.addBook(newText)
     };
 
+    onErrorChanged = ()=> {
+        this.setState({error:false})
+    };
+
     state = {
         error : false
     };
@@ -23,7 +27,7 @@ class  Header extends React.Component {
         <div>
             <h3>What to read?</h3>
             <div>
-                <input ref={this.newBookTitleRef} type='text' placeholder='new book name' className={errorFilter}/>
+                <input ref={this.newBookTitleRef} type='text' placeholder='new book name' className={errorFilter} onChange={this.onErrorChanged}/>
                 <button onClick={this.onAddBookClick}>Add</button>
             </div>
         </div>
