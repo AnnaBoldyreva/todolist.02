@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="add JSX elements to Footer">
+    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="add filterValue for buttons, create booksElements to Tasks components with props">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
     </list>
@@ -68,7 +68,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571660194786</updated>
-      <workItem from="1571660196113" duration="825000" />
+      <workItem from="1571660196113" duration="6696000" />
+      <workItem from="1571667191871" duration="504000" />
+      <workItem from="1571760187660" duration="62000" />
+      <workItem from="1571831649219" duration="2295000" />
+      <workItem from="1571920751021" duration="860000" />
     </task>
     <task id="LOCAL-00001" summary="install">
       <created>1571660673128</created>
@@ -98,7 +102,70 @@
       <option name="project" value="LOCAL" />
       <updated>1571660837483</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add JSX elements to Header component">
+      <created>1571661057485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571661057485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add JSX elements to Tasks component">
+      <created>1571661172764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571661172764</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create component Books this props from tasks">
+      <created>1571662111825</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571662111825</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add filterValue for buttons, create booksElements to Tasks components with props">
+      <created>1571663046477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571663046477</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create method addBook, and create react ref for imput in Header">
+      <created>1571663804291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571663804291</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add filter for books and filter for buttons">
+      <created>1571664324914</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571664324914</updated>
+    </task>
+    <task id="LOCAL-00011" summary="finally 04 lesson">
+      <created>1571666843988</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571666843988</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix bug with checkbox">
+      <created>1571835334479</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571835334479</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add two spans with hide and show">
+      <created>1571921409694</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571921409694</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +176,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -120,6 +189,15 @@
     <MESSAGE value="create Header component + export" />
     <MESSAGE value="create Tasks component + export" />
     <MESSAGE value="create Footer component + export" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Footer component + export" />
+    <MESSAGE value="add JSX elements to Header component" />
+    <MESSAGE value="add JSX elements to Tasks component" />
+    <MESSAGE value="create component Books this props from tasks" />
+    <MESSAGE value="add filterValue for buttons, create booksElements to Tasks components with props" />
+    <MESSAGE value="create method addBook, and create react ref for imput in Header" />
+    <MESSAGE value="add filter for books and filter for buttons" />
+    <MESSAGE value="finally 04 lesson" />
+    <MESSAGE value="fix bug with checkbox" />
+    <MESSAGE value="add two spans with hide and show" />
+    <option name="LAST_COMMIT_MESSAGE" value="add two spans with hide and show" />
   </component>
 </project>
