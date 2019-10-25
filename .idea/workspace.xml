@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="add filterValue for buttons, create booksElements to Tasks components with props">
+    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Books.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,10 @@
       <workItem from="1571667191871" duration="504000" />
       <workItem from="1571760187660" duration="62000" />
       <workItem from="1571831649219" duration="2295000" />
-      <workItem from="1571920751021" duration="860000" />
+      <workItem from="1571920751021" duration="1674000" />
+      <workItem from="1571927637263" duration="21000" />
+      <workItem from="1571927736151" duration="2085000" />
+      <workItem from="1571994938811" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="install">
       <created>1571660673128</created>
@@ -165,7 +169,56 @@
       <option name="project" value="LOCAL" />
       <updated>1571921409694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add method for hide and show span">
+      <created>1571922293020</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1571922293020</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add method for changeFilter">
+      <created>1571928143732</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928143732</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add isHidden to buttons">
+      <created>1571928259531</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928259531</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add style for error in css">
+      <created>1571928309076</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928309076</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add state for header">
+      <created>1571928403594</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928403594</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add styles for error to newText">
+      <created>1571928732020</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928732020</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add margin to app">
+      <created>1571928922037</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1571928922037</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +251,13 @@
     <MESSAGE value="finally 04 lesson" />
     <MESSAGE value="fix bug with checkbox" />
     <MESSAGE value="add two spans with hide and show" />
-    <option name="LAST_COMMIT_MESSAGE" value="add two spans with hide and show" />
+    <MESSAGE value="add method for hide and show span" />
+    <MESSAGE value="add method for changeFilter" />
+    <MESSAGE value="add isHidden to buttons" />
+    <MESSAGE value="add style for error in css" />
+    <MESSAGE value="add state for header" />
+    <MESSAGE value="add styles for error to newText" />
+    <MESSAGE value="add margin to app" />
+    <option name="LAST_COMMIT_MESSAGE" value="add margin to app" />
   </component>
 </project>

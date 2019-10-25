@@ -8,10 +8,10 @@ class  Books extends React.Component {
     };
 
   render =()=> {
-
+    const isDoneFilter = this.props.books.isDone ? 'todoList-task done' : 'todoList-task';
     return (
         <div>
-            <div>
+            <div className={isDoneFilter}>
                 <input type='checkbox'
                        checked={this.props.books.isDone}
                        onChange={this.onIsDoneChange}/>
