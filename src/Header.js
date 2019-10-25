@@ -18,8 +18,15 @@ class  Header extends React.Component {
         this.setState({error:false})
     };
 
+    onKeyPress = (e) => {
+        if (e.key === 'Enter'){
+            this.onAddBookClick()
+        }
+    };
+
     state = {
-        error : false
+        error : false,
+        title : ''
     };
   render =()=> {
       let errorFilter = this.state.error ? 'error' : '';
@@ -27,7 +34,13 @@ class  Header extends React.Component {
         <div>
             <h3>What to read?</h3>
             <div>
-                <input ref={this.newBookTitleRef} type='text' placeholder='new book name' className={errorFilter} onChange={this.onErrorChanged}/>
+                <input ref={this.newBookTitleRef}
+                       type='text'
+                       placeholder='new book name'
+                       className={errorFilter}
+                       onChange={this.onErrorChanged}
+                       onKeyPress={this.onKeyPress}
+                />
                 <button onClick={this.onAddBookClick}>Add</button>
             </div>
         </div>
