@@ -10,7 +10,7 @@ class  Header extends React.Component {
         } else {
             this.setState({error : false})
         }
-        this.state.title = '';
+        this.setState({title: ''});
         this.props.addBook(newText)
     };
 
