@@ -11,9 +11,23 @@
 }
 
 .app {
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .todoList-task.done {
   opacity: 0.5;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
 }

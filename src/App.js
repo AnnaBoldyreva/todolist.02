@@ -46,6 +46,7 @@ class  App extends React.Component {
   render =()=> {
     return (
         <div className='app'>
+            <div className='container'>
           <Header addBook={this.addBook}/>
           <Tasks changeStatus={this.changeStatus}
               books={this.state.books.filter((book)=> {
@@ -57,6 +58,7 @@ class  App extends React.Component {
               }
           })} />
           <Footer filterValue={this.state.filterValue} changeFilter={this.changeFilter}/>
+            </div>
 
         </div>
     );

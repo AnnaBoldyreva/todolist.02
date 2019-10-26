@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 
 class  Header extends React.Component {
@@ -41,18 +42,29 @@ class  Header extends React.Component {
   render =()=> {
       let errorFilter = this.state.error ? 'error' : '';
     return (
-        <div>
+        <div >
             <h3>What to read?</h3>
             <div>
                 <input ref={this.newBookTitleRef}
                        type='text'
-                       placeholder='new book name'
+                       placeholder='title...'
                        className={errorFilter}
                        onChange={this.onChangeTitle}
                        onKeyPress={this.onKeyPress}
                        value={this.state.title}
                        onInput={this.onErrorChanged}
                 />
+                <br/>
+                <input type='text' placeholder='author...'/>
+                <br/>
+                <select id="country" name="century">
+                    <option>XXI</option>
+                    <option>XX</option>
+                    <option>XIX</option>
+                    <option>XVIII</option>
+                    <option>XVII</option>
+                </select>
+                <br/>
                 <button onClick={this.onAddBookClick}>Add</button>
             </div>
         </div>
