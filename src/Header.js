@@ -65,7 +65,7 @@ class  Header extends React.Component {
                     <option>XVII</option>
                 </select>
                 <br/>
-                <button onClick={this.onAddBookClick}>Add</button>
+                <button onClick={this.onAddBookClick} className='forButton'>Add</button>
             </div>
         </div>
     );
