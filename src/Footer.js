@@ -32,8 +32,8 @@ class  Footer extends React.Component {
             <button onClick={this.onActiveFilterClick} className={classForActive}>Active</button>
             </div>}
            <br/>
-            {!this.state.isHidden && <span onClick={this.onShowFiltersClick}>hide</span>}
-            {this.state.isHidden &&<span onClick={this.onHideFiltersClick}>show</span>}
+            {!this.state.isHidden && <button onClick={this.onShowFiltersClick}>hide</button>}
+            {this.state.isHidden &&<button onClick={this.onHideFiltersClick}>show</button>}
         </div>
     );
   }
