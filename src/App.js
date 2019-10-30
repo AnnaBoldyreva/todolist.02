@@ -35,30 +35,52 @@ class  App extends React.Component {
         this.setState({filterValue:newFilterValue})
     };
 
+    // changeStatus = (status, bookId) => {
+    //     let newBooks = this.state.books.map( b => {
+    //         if (b.id === bookId) {
+    //             return {...b, isDone: status};
+    //         }
+    //         return b;
+    //     });
+    //     this.setState({
+    //         books: newBooks
+    //     });
+    // };
+
+    // changeTitle = (bookId, title) => {
+    //     let newBooks = this.state.books.map(b => {
+    //         if (b.id !== bookId ) {
+    //             return b;
+    //         }
+    //         else {
+    //             return {...b, title: title}
+    //         }
+    //     });
+    //     this.setState({
+    //         books: newBooks
+    //     });
+    // };
+
     changeStatus = (status, bookId) => {
-        let newBooks = this.state.books.map( b => {
-            if (b.id === bookId) {
-                return {...b, isDone: status};
-            }
-            return b;
-        });
-        this.setState({
-            books: newBooks
-        });
+        this.changeTask(bookId,{isDone: status})
     };
 
     changeTitle = (bookId, title) => {
+        this.changeTask(bookId,{title: title})
+    };
+
+    changeTask = (bookId, obj) => {
         let newBooks = this.state.books.map(b => {
-            if (b.id !== bookId ) {
+            if (b.id !== bookId) {
                 return b;
             }
             else {
-                return {...b, title: title}
+                return {...b, ...obj};
             }
         });
         this.setState({
             books: newBooks
-        });
+        })
     };
 
 
