@@ -20,7 +20,7 @@ class  Books extends React.Component {
     };
 
     onTitleChanged = (e) => {
-        this.props.changeTitle(this.props.books.id, this.props.books.title, e.currentTarget.value )
+        this.props.changeTitle(this.props.books.id, e.currentTarget.value )
     };
 
   render =()=> {
