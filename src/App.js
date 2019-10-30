@@ -10,15 +10,19 @@ class  App extends React.Component {
 
     state = {
         books : [
-            {id: 1, title:'A hero of our Time', isDone:true, author:'Mikhail Lermontov', published: 1840},
-            {id: 2, title:'Dead Souls', isDone: false,  author:'Nikolay Gogol', published: 1842},
-            {id: 3,title:'What is to be Done?', isDone: false, author:'Nikolay Chernychevsky', published: 1863},
-            {id: 4,title:'Crime and Punishment', isDone: true, author:'Fyodor Dostoevsky', published: 1867}
+            // {id: 1, title:'A hero of our Time', isDone:true, author:'Mikhail Lermontov', published: 1840},
+            // {id: 2, title:'Dead Souls', isDone: false,  author:'Nikolay Gogol', published: 1842},
+            // {id: 3,title:'What is to be Done?', isDone: false, author:'Nikolay Chernychevsky', published: 1863},
+            // {id: 4,title:'Crime and Punishment', isDone: true, author:'Fyodor Dostoevsky', published: 1867}
         ],
         filterValue: 'All'
     };
 
-    nextTaskId = 5;
+    nextTaskId = 0;
+
+    componentDidMount() {
+        this.restoreState();
+    }
 
     addBook = (newText) => {
         let newBook = {
@@ -29,6 +33,7 @@ class  App extends React.Component {
         this.setState({
             books: newBooks
         });
+        this.saveState();
     };
 
     changeFilter = (newFilterValue) => {
@@ -82,6 +87,25 @@ class  App extends React.Component {
             books: newBooks
         })
     };
+
+    saveState = () => {
+        let stateAsString = JSON.stringify(this.state);
+        localStorage.setItem('our-state',stateAsString)
+    };
+
+    restoreState = () => {
+        let state = {
+            books: [],
+            filterValue: 'All'
+        };
+        let stateAsString = localStorage.getItem('our-state');
+        if (stateAsString !== null){
+            state = JSON.parse(stateAsString)
+        }
+        this.setState(state)
+
+    };
+
 
 
 
