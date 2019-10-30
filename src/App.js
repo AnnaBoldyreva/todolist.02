@@ -47,6 +47,20 @@ class  App extends React.Component {
         });
     };
 
+    changeTitle = (bookId, title) => {
+        let newBooks = this.state.books.map(b => {
+            if (b.id !== bookId ) {
+                return b;
+            }
+            else {
+                return {...b, title: title}
+            }
+        });
+        this.setState({
+            books: newBooks
+        });
+    };
+
 
 
   render =()=> {
@@ -55,6 +69,7 @@ class  App extends React.Component {
             <div className='container'>
           <Header addBook={this.addBook}/>
           <Tasks changeStatus={this.changeStatus}
+                 changeTitle={this.changeTitle}
               books={this.state.books.filter((book)=> {
               switch (this.state.filterValue){
                   case 'All': return true;

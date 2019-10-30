@@ -6,7 +6,9 @@ class  Tasks extends React.Component {
   render =() => {
       let booksElements = this.props.books.map((book) => {
           return <Books books={book}
-          changeStatus={this.props.changeStatus}/>
+          changeStatus={this.props.changeStatus}
+          changeTitle={this.props.changeTitle}
+          />
       });
     return (
         <div>

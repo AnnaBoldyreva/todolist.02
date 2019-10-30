@@ -19,6 +19,10 @@ class  Books extends React.Component {
      this.props.changeStatus( e.currentTarget.checked, this.props.books.id);
     };
 
+    onTitleChanged = (e) => {
+        this.props.changeTitle(this.props.books.id, this.props.books.title, e.currentTarget.value )
+    };
+
   render =()=> {
     const isDoneFilter = this.props.books.isDone ? 'todoList-task done' : 'todoList-task';
     return (
@@ -28,8 +32,8 @@ class  Books extends React.Component {
                        checked={this.props.books.isDone}
                        onChange={this.onIsDoneChange}/>
                 {this.state.editMode
-                ? <input onBlur={this.deactivateEditMode} autoFocus={true} value={this.props.books.title}/>
-                    : <span onClick={this.activateEditMode}> {this.props.books.id}-title: '{this.props.books.title}'</span>},  author: {this.props.books.author},  published: {this.props.books.published}
+                ? <input onBlur={this.deactivateEditMode} onChange={this.onTitleChanged} autoFocus={true} value={this.props.books.title}/>
+                    : <span onClick={this.activateEditMode}> {this.props.books.id} - title: '{this.props.books.title}'</span>},  author: {this.props.books.author},  published: {this.props.books.published}
             </div>
 
         </div>
