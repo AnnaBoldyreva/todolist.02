@@ -11,6 +11,10 @@ class  Books extends React.Component {
         this.setState({editMode : true })
     };
 
+    deactivateEditMode = () => {
+        this.setState({editMode: false})
+    };
+
     onIsDoneChange = (e) => {
      this.props.changeStatus( e.currentTarget.checked, this.props.books.id);
     };
@@ -24,7 +28,7 @@ class  Books extends React.Component {
                        checked={this.props.books.isDone}
                        onChange={this.onIsDoneChange}/>
                 {this.state.editMode
-                ? <input autoFocus={true} value={this.props.books.title}/>
+                ? <input onBlur={this.deactivateEditMode} autoFocus={true} value={this.props.books.title}/>
                     : <span onClick={this.activateEditMode}> {this.props.books.id}-title: '{this.props.books.title}'</span>},  author: {this.props.books.author},  published: {this.props.books.published}
             </div>
 
