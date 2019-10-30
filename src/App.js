@@ -32,8 +32,7 @@ class  App extends React.Component {
         let newBooks = [...this.state.books, newBook];
         this.setState({
             books: newBooks
-        });
-        this.saveState();
+        }, ()=> {this.saveState();})
     };
 
     changeFilter = (newFilterValue) => {
