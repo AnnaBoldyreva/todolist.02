@@ -5,20 +5,26 @@ import Tasks from "./Tasks";
 import Footer from "./Footer";
 class  App extends React.Component {
 
+
+
+
     state = {
         books : [
-            {title:'A hero of our Time', isDone:true, author:'Mikhail Lermontov', published: 1840},
-            {title:'Dead Souls', isDone: false,  author:'Nikolay Gogol', published: 1842},
-            {title:'What is to be Done?', isDone: false, author:'Nikolay Chernychevsky', published: 1863},
-            {title:'Crime and Punishment', isDone: true, author:'Fyodor Dostoevsky', published: 1867}
+            {id: 1, title:'A hero of our Time', isDone:true, author:'Mikhail Lermontov', published: 1840},
+            {id: 2, title:'Dead Souls', isDone: false,  author:'Nikolay Gogol', published: 1842},
+            {id: 3,title:'What is to be Done?', isDone: false, author:'Nikolay Chernychevsky', published: 1863},
+            {id: 4,title:'Crime and Punishment', isDone: true, author:'Fyodor Dostoevsky', published: 1867}
         ],
         filterValue: 'All'
     };
 
+    nextTaskId = 5;
+
     addBook = (newText) => {
         let newBook = {
-            title: newText, isDone:false, author:' ', published: ' '
+          id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
         };
+        this.nextTaskId++;
         let newBooks = [...this.state.books, newBook];
         this.setState({
             books: newBooks
@@ -29,9 +35,9 @@ class  App extends React.Component {
         this.setState({filterValue:newFilterValue})
     };
 
-    changeStatus = (status, book) => {
+    changeStatus = (status, bookId) => {
         let newBooks = this.state.books.map( b => {
-            if (b === book) {
+            if (b.id === bookId) {
                 return {...b, isDone: status};
             }
             return b;
