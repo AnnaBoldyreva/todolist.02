@@ -84,7 +84,7 @@ class  App extends React.Component {
         });
         this.setState({
             books: newBooks
-        })
+        },()=> {this.saveState();})
     };
 
     saveState = () => {
@@ -101,7 +101,11 @@ class  App extends React.Component {
         if (stateAsString !== null){
             state = JSON.parse(stateAsString)
         }
-        this.setState(state)
+        this.setState(state, ()=>{this.state.books.forEach(b=>{
+            if(b.id>= this.nextTaskId){
+                this.nextTaskId = b.id+ 1
+            }
+        })})
 
     };
 
