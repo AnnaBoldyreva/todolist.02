@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import TodoList from "./TodoList";
+import AddNewItemForm from "./AddNewItemForm";
 
 
 class  App extends React.Component {
@@ -16,10 +17,14 @@ class  App extends React.Component {
   render =()=> {
       const todoLists = this.state.todoLists.map(tl => <TodoList id={tl.id} title={tl.title}/> );
     return (
-
+        <>
+        <div>
+            <AddNewItemForm/>
+        </div>
         <div className='App'>
             {todoLists}
         </div>
+            </>
     );
   }
 }
