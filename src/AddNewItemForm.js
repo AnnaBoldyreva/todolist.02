@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 
 
-class  Header extends React.Component {
+class  AddNewItemForm extends React.Component {
     newBookTitleRef = React.createRef();
-    onAddBookClick = () => {
+    onAddItemClick = () => {
         let newText = this.state.title;
         if (newText === ''){
             this.setState({error : true})
@@ -12,7 +12,7 @@ class  Header extends React.Component {
             this.setState({error : false})
         }
         this.setState({title: ''});
-        this.props.addBook(newText)
+        this.props.addItem(newText)
     };
 
 
@@ -24,7 +24,7 @@ class  Header extends React.Component {
 
     onKeyPress = (e) => {
         if (e.key === 'Enter'){
-            this.onAddBookClick()
+            this.onAddItemClick()
         }
     };
 
@@ -43,7 +43,6 @@ class  Header extends React.Component {
       let errorFilter = this.state.error ? 'error' : '';
     return (
         <div >
-            <h3>{this.props.title}</h3>
             <div>
                 <input ref={this.newBookTitleRef}
                        type='text'
@@ -55,11 +54,11 @@ class  Header extends React.Component {
                        onInput={this.onErrorChanged}
                 />
                 <br/>
-                <button onClick={this.onAddBookClick} className='forButton'>Add</button>
+                <button onClick={this.onAddItemClick} className='forButton'>Add</button>
             </div>
         </div>
     );
   }
 }
 
-export default Header;
+export default AddNewItemForm;

@@ -7,8 +7,9 @@ class  App extends React.Component {
 
     state = {
         todoLists:[
-            {id: 1, title: 'What to learn?'},
-            {id: 2, title: 'What to do?'}
+            {id: 1, title: 'What to learn:'},
+            {id: 2, title: 'What to do:'},
+            {id: 3, title: 'What to eat:?'}
             ]
     };
 

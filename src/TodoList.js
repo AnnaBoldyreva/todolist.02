@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from "./Header";
+import AddNewItemForm from "./AddNewItemForm";
 import Tasks from "./Tasks";
 import Footer from "./Footer";
+import TodoListTitle from "./TodoListTitle";
 
 class  TodoList extends React.Component {
 
@@ -23,7 +24,7 @@ class  TodoList extends React.Component {
         this.restoreState();
     }
 
-    addBook = (newText) => {
+    addItem = (newText) => {
         let newBook = {
           id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
         };
@@ -90,7 +91,10 @@ class  TodoList extends React.Component {
     return (
         <div className='app'>
             <div className='container'>
-          <Header addBook={this.addBook} title={this.props.title}/>
+                <div>
+                    <TodoListTitle title={this.props.title}/>
+                    <AddNewItemForm addItem={this.addItem} />
+                </div>
           <Tasks changeStatus={this.changeStatus}
                  changeTitle={this.changeTitle}
               books={this.state.books.filter((book)=> {
