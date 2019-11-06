@@ -14,12 +14,16 @@ class  App extends React.Component {
             ]
     };
 
+    addTodoList = (title) => {
+       this.setState({todoLists: [...this.state.todoLists,{title: title}]})
+    };
+
   render =()=> {
       const todoLists = this.state.todoLists.map(tl => <TodoList id={tl.id} title={tl.title}/> );
     return (
         <>
         <div>
-            <AddNewItemForm/>
+            <AddNewItemForm addItem={this.addTodoList}/>
         </div>
         <div className='App'>
             {todoLists}

@@ -24,7 +24,7 @@ class  TodoList extends React.Component {
         this.restoreState();
     }
 
-    addItem = (newText) => {
+    addBook = (newText) => {
         let newBook = {
           id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
         };
@@ -93,7 +93,7 @@ class  TodoList extends React.Component {
             <div className='container'>
                 <div>
                     <TodoListTitle title={this.props.title}/>
-                    <AddNewItemForm addItem={this.addItem} />
+                    <AddNewItemForm addItem={this.addBook} />
                 </div>
           <Tasks changeStatus={this.changeStatus}
                  changeTitle={this.changeTitle}
