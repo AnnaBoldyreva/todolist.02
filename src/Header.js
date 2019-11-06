@@ -43,7 +43,7 @@ class  Header extends React.Component {
       let errorFilter = this.state.error ? 'error' : '';
     return (
         <div >
-            <h3>What to read?</h3>
+            <h3>{this.props.title}</h3>
             <div>
                 <input ref={this.newBookTitleRef}
                        type='text'

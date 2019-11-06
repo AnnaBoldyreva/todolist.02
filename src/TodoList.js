@@ -63,7 +63,7 @@ class  TodoList extends React.Component {
 
     saveState = () => {
         let stateAsString = JSON.stringify(this.state);
-        localStorage.setItem('our-state',stateAsString)
+        localStorage.setItem('our-state-' + this.props.id, stateAsString)
     };
 
     restoreState = () => {
@@ -71,7 +71,7 @@ class  TodoList extends React.Component {
             books: [],
             filterValue: 'All'
         };
-        let stateAsString = localStorage.getItem('our-state');
+        let stateAsString = localStorage.getItem('our-state-'  + this.props.id);
         if (stateAsString !== null){
             state = JSON.parse(stateAsString)
         }
@@ -90,7 +90,7 @@ class  TodoList extends React.Component {
     return (
         <div className='app'>
             <div className='container'>
-          <Header addBook={this.addBook}/>
+          <Header addBook={this.addBook} title={this.props.title}/>
           <Tasks changeStatus={this.changeStatus}
                  changeTitle={this.changeTitle}
               books={this.state.books.filter((book)=> {

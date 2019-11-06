@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.todoList {
+  width: 300px;
 }
 
 .filterActive {
