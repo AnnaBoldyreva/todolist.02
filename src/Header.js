@@ -55,16 +55,6 @@ class  Header extends React.Component {
                        onInput={this.onErrorChanged}
                 />
                 <br/>
-                <input type='text' placeholder='author...'/>
-                <br/>
-                <select id="country" name="century">
-                    <option>XXI</option>
-                    <option>XX</option>
-                    <option>XIX</option>
-                    <option>XVIII</option>
-                    <option>XVII</option>
-                </select>
-                <br/>
                 <button onClick={this.onAddBookClick} className='forButton'>Add</button>
             </div>
         </div>
