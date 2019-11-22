@@ -15,7 +15,6 @@ class  AddNewItemForm extends React.Component {
         this.props.addItem(newText)
     };
 
-
     onErrorChanged = ()=> {
         this.setState({error:false})
     };
