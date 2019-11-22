@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="">
+    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="create to keys for LocalStorage + create state for App with id and title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddNewItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddNewItemForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,21 @@
       <workItem from="1571920751021" duration="1674000" />
       <workItem from="1571927637263" duration="21000" />
       <workItem from="1571927736151" duration="2085000" />
-      <workItem from="1571994938811" duration="245000" />
+      <workItem from="1571994938811" duration="1686000" />
+      <workItem from="1572107568009" duration="1989000" />
+      <workItem from="1572438366567" duration="4949000" />
+      <workItem from="1572443521190" duration="4000" />
+      <workItem from="1572535620761" duration="297000" />
+      <workItem from="1573032075397" duration="3786000" />
+      <workItem from="1573048373401" duration="2964000" />
+      <workItem from="1573220407060" duration="342000" />
+      <workItem from="1573221967611" duration="309000" />
+      <workItem from="1573224996473" duration="442000" />
+      <workItem from="1573290821598" duration="233000" />
+      <workItem from="1573291660344" duration="1976000" />
+      <workItem from="1573385229323" duration="1771000" />
+      <workItem from="1573660754743" duration="554000" />
+      <workItem from="1574402989663" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="install">
       <created>1571660673128</created>
@@ -218,7 +231,168 @@
       <option name="project" value="LOCAL" />
       <updated>1571928922037</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add class for done book">
+      <created>1571995214714</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571995214714</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add ability add books by enter">
+      <created>1571995539341</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571995539341</updated>
+    </task>
+    <task id="LOCAL-00023" summary="now we can add titile of book without ref">
+      <created>1571996351776</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1571996351776</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactoring">
+      <created>1571996578993</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571996578993</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add buttons instead spans">
+      <created>1572107701324</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1572107701324</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add new imput for writers and select option">
+      <created>1572109053442</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1572109053442</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactoring styles">
+      <created>1572109606710</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1572109606710</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add id for tasks">
+      <created>1572439093525</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1572439093525</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add edit mode for books">
+      <created>1572440196323</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1572440196323</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add deactivate mode for imput">
+      <created>1572440324542</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1572440324542</updated>
+    </task>
+    <task id="LOCAL-00031" summary="try add changeTitle method. It doesn't work">
+      <created>1572441578068</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1572441578068</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactoring, now method works">
+      <created>1572441744634</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1572441744634</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refactoring code + add changeTask method for two methods">
+      <created>1572442308975</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1572442308975</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add componentDidMount">
+      <created>1572442968681</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1572442968681</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add callback in setState">
+      <created>1572443216263</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1572443216263</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add nextId">
+      <created>1572535875491</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1572535875491</updated>
+    </task>
+    <task id="LOCAL-00037" summary="refactoring">
+      <created>1573034731448</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1573034731448</updated>
+    </task>
+    <task id="LOCAL-00038" summary="create one component TodoList instead our App.js and create new App.js">
+      <created>1573041539879</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1573041539879</updated>
+    </task>
+    <task id="LOCAL-00039" summary="create to keys for LocalStorage + create state for App with id and title">
+      <created>1573044407103</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1573044407103</updated>
+    </task>
+    <task id="LOCAL-00040" summary="create universal AddItem component">
+      <created>1573049578209</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1573049578209</updated>
+    </task>
+    <task id="LOCAL-00041" summary="use AddNewItemForm in App component">
+      <created>1573049677186</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1573049677186</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add new method for addItem">
+      <created>1573050649418</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1573050649418</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add one big method for addTodoList">
+      <created>1573052096679</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1573052096679</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,26 +412,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install" />
-    <MESSAGE value="create Header component + export" />
-    <MESSAGE value="create Tasks component + export" />
-    <MESSAGE value="create Footer component + export" />
-    <MESSAGE value="add JSX elements to Header component" />
-    <MESSAGE value="add JSX elements to Tasks component" />
-    <MESSAGE value="create component Books this props from tasks" />
-    <MESSAGE value="add filterValue for buttons, create booksElements to Tasks components with props" />
-    <MESSAGE value="create method addBook, and create react ref for imput in Header" />
-    <MESSAGE value="add filter for books and filter for buttons" />
-    <MESSAGE value="finally 04 lesson" />
-    <MESSAGE value="fix bug with checkbox" />
-    <MESSAGE value="add two spans with hide and show" />
-    <MESSAGE value="add method for hide and show span" />
-    <MESSAGE value="add method for changeFilter" />
-    <MESSAGE value="add isHidden to buttons" />
-    <MESSAGE value="add style for error in css" />
     <MESSAGE value="add state for header" />
     <MESSAGE value="add styles for error to newText" />
     <MESSAGE value="add margin to app" />
-    <option name="LAST_COMMIT_MESSAGE" value="add margin to app" />
+    <MESSAGE value="add class for done book" />
+    <MESSAGE value="add ability add books by enter" />
+    <MESSAGE value="now we can add titile of book without ref" />
+    <MESSAGE value="add buttons instead spans" />
+    <MESSAGE value="add new imput for writers and select option" />
+    <MESSAGE value="refactoring styles" />
+    <MESSAGE value="add id for tasks" />
+    <MESSAGE value="add edit mode for books" />
+    <MESSAGE value="add deactivate mode for imput" />
+    <MESSAGE value="try add changeTitle method. It doesn't work" />
+    <MESSAGE value="refactoring, now method works" />
+    <MESSAGE value="refactoring code + add changeTask method for two methods" />
+    <MESSAGE value="add componentDidMount" />
+    <MESSAGE value="add callback in setState" />
+    <MESSAGE value="add nextId" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="create one component TodoList instead our App.js and create new App.js" />
+    <MESSAGE value="create to keys for LocalStorage + create state for App with id and title" />
+    <MESSAGE value="create universal AddItem component" />
+    <MESSAGE value="use AddNewItemForm in App component" />
+    <MESSAGE value="add new method for addItem" />
+    <MESSAGE value="add one big method for addTodoList" />
+    <option name="LAST_COMMIT_MESSAGE" value="add one big method for addTodoList" />
   </component>
 </project>
