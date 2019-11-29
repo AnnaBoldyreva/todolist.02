@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="create to keys for LocalStorage + create state for App with id and title">
+    <list default="true" id="669d1b44-4a8f-41e8-a454-3ad476b8a179" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddNewItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddNewItemForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,21 +88,10 @@
       <workItem from="1573291660344" duration="1976000" />
       <workItem from="1573385229323" duration="1771000" />
       <workItem from="1573660754743" duration="554000" />
-      <workItem from="1574402989663" duration="212000" />
-    </task>
-    <task id="LOCAL-00001" summary="install">
-      <created>1571660673128</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1571660673129</updated>
-    </task>
-    <task id="LOCAL-00002" summary="create Header component + export">
-      <created>1571660737649</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1571660737649</updated>
+      <workItem from="1574402989663" duration="2303000" />
+      <workItem from="1575028645689" duration="397000" />
+      <workItem from="1575031235480" duration="240000" />
+      <workItem from="1575045213861" duration="1168000" />
     </task>
     <task id="LOCAL-00003" summary="create Tasks component + export">
       <created>1571660788474</created>
@@ -392,7 +380,63 @@
       <option name="project" value="LOCAL" />
       <updated>1573052096679</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="small refactoring">
+      <created>1574403298380</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403298380</updated>
+    </task>
+    <task id="LOCAL-00045" summary="install redux">
+      <created>1574403477715</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403477715</updated>
+    </task>
+    <task id="LOCAL-00046" summary="install react-redux">
+      <created>1574403524647</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403524647</updated>
+    </task>
+    <task id="LOCAL-00047" summary="create store.js and add initial todolists">
+      <created>1574403677544</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403677544</updated>
+    </task>
+    <task id="LOCAL-00048" summary="createStore by redux">
+      <created>1574403907772</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403907772</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add provider">
+      <created>1574404093671</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1574404093671</updated>
+    </task>
+    <task id="LOCAL-00050" summary="refactoring">
+      <created>1575034836951</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1575034836952</updated>
+    </task>
+    <task id="LOCAL-00051" summary="connect App">
+      <created>1575046330369</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1575046330369</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,13 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add state for header" />
-    <MESSAGE value="add styles for error to newText" />
-    <MESSAGE value="add margin to app" />
-    <MESSAGE value="add class for done book" />
-    <MESSAGE value="add ability add books by enter" />
-    <MESSAGE value="now we can add titile of book without ref" />
-    <MESSAGE value="add buttons instead spans" />
     <MESSAGE value="add new imput for writers and select option" />
     <MESSAGE value="refactoring styles" />
     <MESSAGE value="add id for tasks" />
@@ -430,13 +467,20 @@
     <MESSAGE value="add componentDidMount" />
     <MESSAGE value="add callback in setState" />
     <MESSAGE value="add nextId" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="create one component TodoList instead our App.js and create new App.js" />
     <MESSAGE value="create to keys for LocalStorage + create state for App with id and title" />
     <MESSAGE value="create universal AddItem component" />
     <MESSAGE value="use AddNewItemForm in App component" />
     <MESSAGE value="add new method for addItem" />
     <MESSAGE value="add one big method for addTodoList" />
-    <option name="LAST_COMMIT_MESSAGE" value="add one big method for addTodoList" />
+    <MESSAGE value="small refactoring" />
+    <MESSAGE value="install redux" />
+    <MESSAGE value="install react-redux" />
+    <MESSAGE value="create store.js and add initial todolists" />
+    <MESSAGE value="createStore by redux" />
+    <MESSAGE value="add provider" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="connect App" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect App" />
   </component>
 </project>
