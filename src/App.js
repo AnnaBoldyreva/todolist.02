@@ -27,27 +27,27 @@ class  App extends React.Component {
            this.saveState();
            })
     };
-    componentDidMount() {
-        this.restoreState();
-    }
-
-    saveState = () => {
-        let stateAsString = JSON.stringify(this.state);
-        localStorage.setItem('todoLists', stateAsString)
-    };
-
-    restoreState = () => {
-        let stateAsString = localStorage.getItem('todoLists');
-        if (stateAsString) {
-         let state = JSON.parse(stateAsString);
-            state.todoLists.forEach(b=>{
-                if(b.id>= this.nextItemId ){
-                    this.nextItemId  = b.id+ 1
-                }
-            });
-            this.setState(state);
-        }
-    };
+    // componentDidMount() {
+    //     this.restoreState();
+    // }
+    //
+    // saveState = () => {
+    //     let stateAsString = JSON.stringify(this.state);
+    //     localStorage.setItem('todoLists', stateAsString)
+    // };
+    //
+    // restoreState = () => {
+    //     let stateAsString = localStorage.getItem('todoLists');
+    //     if (stateAsString) {
+    //      let state = JSON.parse(stateAsString);
+    //         state.todoLists.forEach(b=>{
+    //             if(b.id>= this.nextItemId ){
+    //                 this.nextItemId  = b.id+ 1
+    //             }
+    //         });
+    //         this.setState(state);
+    //     }
+    // };
 
   render =()=> {
       const todoLists = this.props.todoLists.map(tl => <TodoList id={tl.id} title={tl.title}/> );
