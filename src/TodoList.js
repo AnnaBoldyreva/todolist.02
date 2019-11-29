@@ -4,25 +4,20 @@ import AddNewItemForm from "./AddNewItemForm";
 import Tasks from "./Tasks";
 import Footer from "./Footer";
 import TodoListTitle from "./TodoListTitle";
+import {connect} from "react-redux";
 
 class  TodoList extends React.Component {
 
 
     state = {
-        books : [
-            // {id: 1, title:'A hero of our Time', isDone:true, author:'Mikhail Lermontov', published: 1840},
-            // {id: 2, title:'Dead Souls', isDone: false,  author:'Nikolay Gogol', published: 1842},
-            // {id: 3,title:'What is to be Done?', isDone: false, author:'Nikolay Chernychevsky', published: 1863},
-            // {id: 4,title:'Crime and Punishment', isDone: true, author:'Fyodor Dostoevsky', published: 1867}
-        ],
         filterValue: 'All'
     };
 
     nextTaskId = 0;
 
-    componentDidMount() {
-        this.restoreState();
-    }
+    // componentDidMount() {
+    //     this.restoreState();
+    // }
 
     changeFilter = (newFilterValue) => {
         this.setState({filterValue:newFilterValue})
@@ -33,10 +28,11 @@ class  TodoList extends React.Component {
             id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
         };
         this.nextTaskId++;
-        let newBooks = [...this.state.books, newBook];
-        this.setState({
-            books: newBooks
-        }, ()=> {this.saveState();})
+        this.props.addBook(newBook);
+        // let newBooks = [...this.state.books, newBook];
+        // this.setState({
+        //     books: newBooks
+        // }, ()=> {this.saveState();})
     };
 
     changeStatus = (status, bookId) => {
@@ -60,28 +56,28 @@ class  TodoList extends React.Component {
             books: newBooks
         },()=> {this.saveState();})
     };
-
-    saveState = () => {
-        let stateAsString = JSON.stringify(this.state);
-        localStorage.setItem('our-state-' + this.props.id, stateAsString)
-    };
-
-    restoreState = () => {
-        let state = {
-            books: [],
-            filterValue: 'All'
-        };
-        let stateAsString = localStorage.getItem('our-state-'  + this.props.id);
-        if (stateAsString !== null){
-            state = JSON.parse(stateAsString)
-        }
-        this.setState(state, ()=>{this.state.books.forEach(b=>{
-            if(b.id>= this.nextTaskId){
-                this.nextTaskId = b.id+ 1
-            }
-        })})
-
-    };
+    //
+    // saveState = () => {
+    //     let stateAsString = JSON.stringify(this.state);
+    //     localStorage.setItem('our-state-' + this.props.id, stateAsString)
+    // };
+    //
+    // restoreState = () => {
+    //     let state = {
+    //         books: [],
+    //         filterValue: 'All'
+    //     };
+    //     let stateAsString = localStorage.getItem('our-state-'  + this.props.id);
+    //     if (stateAsString !== null){
+    //         state = JSON.parse(stateAsString)
+    //     }
+    //     this.setState(state, ()=>{this.state.books.forEach(b=>{
+    //         if(b.id>= this.nextTaskId){
+    //             this.nextTaskId = b.id+ 1
+    //         }
+    //     })})
+    //
+    // };
 
 
 
@@ -96,7 +92,7 @@ class  TodoList extends React.Component {
                 </div>
           <Tasks changeStatus={this.changeStatus}
                  changeTitle={this.changeTitle}
-              books={this.state.books.filter((book)=> {
+              books={this.props.books.filter((book)=> {
               switch (this.state.filterValue){
                   case 'All': return true;
                   case 'Completed': return book.isDone;
@@ -112,4 +108,18 @@ class  TodoList extends React.Component {
   }
 }
 
-export default TodoList;
+
+
+ const mapDispatchToProps = (dispatch) => {
+    return {
+        addBook: (newBook)=> {
+            const action = {
+                type: 'ADD_TASK',
+                newBook: newBook
+            };
+            dispatch(action)
+        }
+    }
+};
+
+export default connect(null,mapDispatchToProps)(TodoList);
