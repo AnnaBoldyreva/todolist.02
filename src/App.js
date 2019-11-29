@@ -8,6 +8,7 @@ import {connect} from "react-redux";
 
 
 
+
 class  App extends React.Component {
 
     nextItemId = 0;
@@ -17,15 +18,16 @@ class  App extends React.Component {
     // };
 
     addTodoList = (title) => {
-        let newItem = {
+        let newTodoList = {
             title: title,
             id: this.nextItemId
         };
-        this.nextItemId ++ ;
-       this.setState({todoLists: [...this.state.todoLists, newItem]},
-           ()=> {
-           this.saveState();
-           })
+        this.props.addTodoList(newTodoList)
+       //  this.nextItemId ++ ;
+       // this.setState({todoLists: [...this.state.todoLists, newItem]},
+       //     ()=> {
+       //     this.saveState();
+       //     })
     };
     // componentDidMount() {
     //     this.restoreState();
@@ -70,8 +72,20 @@ const mapStateToProps = (state) => {
     }
 };
 
+const  mapDispatchToProps = (dispatch) => {
+    return {
+        addTodoList: (newTodoList) => {
+            const action = {
+                type: 'ADD_TODOLIST',
+                newTodoList: newTodoList
+            };
+            dispatch(action)
+        }
+    }
+};
+
 // const ConnectedApp = connect(mapStateToProps)(App);
 //
 // export default ConnectedApp;
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
