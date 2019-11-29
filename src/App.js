@@ -70,8 +70,8 @@ const mapStateToProps = (state) => {
     }
 };
 
-const ConnectedApp = connect(mapStateToProps)(App);
+// const ConnectedApp = connect(mapStateToProps)(App);
+//
+// export default ConnectedApp;
 
-export default ConnectedApp;
-
-// export default App;
+export default connect(mapStateToProps)(App);
