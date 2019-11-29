@@ -10,6 +10,13 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
+    switch(action.type){
+        case 'ADD_TODOLIST':
+            return {
+                ...state, todoLists: [...state.todoLists, action.newTodoList]
+        }
+    }
+
     return state
 };
 
