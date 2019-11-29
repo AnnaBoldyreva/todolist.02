@@ -1,6 +1,7 @@
 import {createStore} from "redux";
 
 
+
 const initialState = {
     todoLists : [
         {title: "to eat", id: 0},
@@ -10,14 +11,14 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-    switch(action.type){
+    switch(action.type) {
         case 'ADD_TODOLIST':
             return {
                 ...state, todoLists: [...state.todoLists, action.newTodoList]
-        }
+            };
+        default:
+            return state
     }
-
-    return state
 };
 
 const store = createStore(reducer);
