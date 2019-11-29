@@ -1,9 +1,8 @@
 import {createStore} from "redux";
-import ConnectedApp from "./ConnectedApp";
-ConnectedApp
+
 
 const initialState = {
-    todolists : []
+    todoLists : []
 };
 
 const reducer = (state = initialState, action) => {
