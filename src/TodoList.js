@@ -24,9 +24,13 @@ class  TodoList extends React.Component {
         this.restoreState();
     }
 
+    changeFilter = (newFilterValue) => {
+        this.setState({filterValue:newFilterValue})
+    };
+
     addBook = (newText) => {
         let newBook = {
-          id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
+            id: this.nextTaskId,  title: newText, isDone:false, author:' ', published: ' '
         };
         this.nextTaskId++;
         let newBooks = [...this.state.books, newBook];
@@ -34,11 +38,6 @@ class  TodoList extends React.Component {
             books: newBooks
         }, ()=> {this.saveState();})
     };
-
-    changeFilter = (newFilterValue) => {
-        this.setState({filterValue:newFilterValue})
-    };
-
 
     changeStatus = (status, bookId) => {
         this.changeTask(bookId,{isDone: status})
